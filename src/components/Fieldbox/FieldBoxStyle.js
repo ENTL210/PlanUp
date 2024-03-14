@@ -16,7 +16,7 @@ const Input = styled.input`
 border: 0;
 background: none;
 width: 100%;
-padding: 10px 10px;
+padding: 10px;
 `
 
 const Placeholder = styled(motion.div)`

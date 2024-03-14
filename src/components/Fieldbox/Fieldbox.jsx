@@ -1,37 +1,37 @@
 import React, { useRef, useEffect, useState } from "react";
-import { Input, Placeholder, Wrapper } from "./Style";
+import { Input, Placeholder, Wrapper } from "./FieldBoxStyle";
 
 function Fieldbox({ value, setValue, type, placeholder }) {
     const inputRef = useRef(null)
-    const [isClicked, setIsClick] = useState(false)
+    const [isFocus, setIsFocus] = useState(false)
 
     useEffect(() => {
-        if (isClicked) {
+        if (isFocus) {
             inputRef.current.focus()
         }
         else {
             inputRef.current.blur()
         }
-    }, [isClicked])
+    }, [isFocus])
 
     return (
         <Wrapper
             onClick={() => {
-                setIsClick(true)
+                setIsFocus(true)
             }}
-            onMouseOutCapture={() => {
+            onBlur={() => {
                 if (value === "") {
-                    setIsClick(false)
+                    setIsFocus(false)
                 } else {
-                    setIsClick(true)
+                    setIsFocus(true)
                 }
             }}
         >
-            <Input value={value} onChange={e => setValue(e.target.value)} type={type} ref={inputRef} />
+            <Input type={type} value={value} onChange={e => setValue(e.target.value)} ref={inputRef} />
             <Placeholder
                 animate={{
-                    y: isClicked ? -18 : 0,
-                    background: isClicked ? "rgb(247,247,247)" : "",
+                    y: isFocus ? -18 : 0,
+                    background: isFocus ? "#eeeeee" : "",
                 }}
                 transition={{
                     type: "tween",
