@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Container = styled(motion.div)`
 display: flex;
-width: 50%;
+width: ${props => props.length};
 align-items: center;
 justify-content: center;
 background: ${props => props.bgColor};

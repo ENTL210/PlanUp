@@ -37,32 +37,21 @@ border-radius: 5px;
 flex-wrap: wrap;
 `
 
-const ForgotPassContainer = styled.div`
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-`
 
-
-function Signin() {
+function Signup() {
+    const [fullName, setFullName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [comfirmedPassword, setConfirmedPassword] = useState("")
 
     return (
         <PageContainer>
-            <Header>Login</Header>
+            <Header>Sign Up</Header>
             <AuthContainer>
-                <FieldBox value={email} type={"text"} setValue={(val) => setEmail(val)} placeholder={"Email"} />
+                <FieldBox value={fullName} setValue={(val) => setFullName(val)} placeholder={"Full Name"} />
+                <FieldBox value={email} setValue={(val) => setEmail(val)} placeholder={"Email"} />
                 <FieldBox value={password} type={"password"} setValue={(val) => setPassword(val)} placeholder={"Password"} />
-                <ForgotPassContainer>
-                    <Navigator
-                        label={"Forgot Password?"}
-                        fgColor={"#F67474"}
-                        hoverFgColor={"#db6969"}
-                        path={"/"}
-                    />
-                </ForgotPassContainer>
+                <FieldBox value={comfirmedPassword} type={"password"} setValue={(val) => setConfirmedPassword(val)} placeholder={"Confirm Password"} />
                 <Button
                     bgColor={"#F67474"}
                     fgColor={"#FFFFFF"}
@@ -71,14 +60,14 @@ function Signin() {
                     length={"50%"}
                 />
                 <Navigator
-                label={"Create Account"}
-                fgColor={"#F67474"}
-                hoverFgColor={"#db6969"}
-                path={"/signup"}
+                    label={"Sign In"}
+                    fgColor={"#F67474"}
+                    hoverFgColor={"#db6969"}
+                    path={"/signin"}
                 />
             </AuthContainer>
         </PageContainer>
     )
 }
 
-export default Signin
+export default Signup

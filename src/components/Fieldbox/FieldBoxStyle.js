@@ -21,7 +21,8 @@ padding: 10px;
 
 const Placeholder = styled(motion.div)`
 position: absolute;
-color: rgb(222, 220, 220);
+color: rgb(220, 220, 220);
+font-weight: 600;
 margin: 0px 10px;
 font-size: 1rem;
 `

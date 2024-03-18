@@ -1,15 +1,24 @@
 import React from "react";
 import { Container, Label } from "./ButtonStyle";
 
-function Button({bgColor, fgColor, label, onClicked}) {
+function Button({ bgColor, hoverBgColor, fgColor, label, length, onClicked }) {
     return (
-        <Container 
+        <Container
             bgColor={bgColor}
-            whileHover={{
-                cursor: "pointer"
+            initial={{
+                background: bgColor
             }}
+            whileHover={{
+                cursor: "pointer",
+                background: hoverBgColor
+            }}
+            length={length}
         >
-            <Label>{label}</Label>
+            <Label
+                fgColor={fgColor}
+            >
+                {label}
+            </Label>
         </Container>
     )
 }
