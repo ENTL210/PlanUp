@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import FieldBox from "./components/fieldbox/Fieldbox.jsx";
-import Navigator from "./components/navigator/Navigator.jsx";
-import Button from "./components/button/Button.jsx";
+import FieldBox from "./components/Fieldbox/Fieldbox.jsx";
+import Navigator from "./components/Navigator/Navigator.jsx";
+import Button from "./components/Button/Button.jsx";
 
 const PageContainer = styled.div`
 display: flex;

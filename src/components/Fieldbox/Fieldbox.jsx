@@ -32,6 +32,7 @@ function Fieldbox({ value, setValue, type, placeholder }) {
                 animate={{
                     y: isFocus ? -18 : 0,
                     background: isFocus ? "#eeeeee" : "",
+                    color: isFocus ? "#000000" : ""
                 }}
                 transition={{
                     type: "tween",
