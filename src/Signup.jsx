@@ -14,7 +14,6 @@ background-color: #eeeeee;
 min-height: 100vh;
 `
 
-
 const Header = styled.div`
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 500;
@@ -36,7 +35,6 @@ gap: 20px;
 border-radius: 5px;
 flex-wrap: wrap;
 `
-
 
 function Signup() {
     const [fullName, setFullName] = useState("")
@@ -60,7 +58,7 @@ function Signup() {
                     length={"50%"}
                 />
                 <Navigator
-                    label={"Sign In"}
+                    label={"Have an account?"}
                     fgColor={"#F67474"}
                     hoverFgColor={"#db6969"}
                     path={"/signin"}

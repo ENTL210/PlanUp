@@ -71,7 +71,7 @@ function Signin() {
                     length={"50%"}
                 />
                 <Navigator
-                label={"Create Account"}
+                label={"Don't have an account?"}
                 fgColor={"#F67474"}
                 hoverFgColor={"#db6969"}
                 path={"/signup"}

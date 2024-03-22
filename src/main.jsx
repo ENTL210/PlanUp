@@ -15,7 +15,6 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <>
-
       </>
     ),
   },
@@ -34,9 +33,7 @@ const router = createBrowserRouter([
   {
     path: "calendar",
     element: (
-      <>
-
-      </>
+      <App/>
     ),
   },
 ]);

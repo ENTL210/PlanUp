@@ -5,6 +5,7 @@ import {motion} from "framer-motion"
 
 const Nav = styled(motion.a)`
 color: ${props => props.fgColor};
+font-family: 'Source Sans 3', sans-serif;
 cursor: pointer;
 padding: 5px;
 border-radius: 5px;

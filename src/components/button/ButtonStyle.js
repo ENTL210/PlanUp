@@ -10,6 +10,7 @@ background: ${props => props.bgColor};
 border-radius: 5px;
 `
 const Label = styled.a`
+font-family: 'Source Sans 3', sans-serif;
 color: ${props => props.fgColor};
 padding: 10px;
 `

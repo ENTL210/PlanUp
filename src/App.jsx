@@ -1,12 +1,22 @@
 import { useState } from 'react'
+import { Calendar, Container, Header, Main, Menu } from './AppStyle'
+
 
 
 function App() {
 
   return (
-    <>
-      Hello, World
-    </>
+    <Container>
+      <Header>PlanUp</Header>
+      <Main>
+        <Menu>
+          Hello
+        </Menu>
+        <Calendar>
+          Hello
+        </Calendar>
+      </Main>
+    </Container>
   )
 }
 

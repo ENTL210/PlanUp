@@ -13,13 +13,15 @@ border-radius: 5px;
 `
 
 const Input = styled.input`
+font-family: 'Source Sans 3', sans-serif;
 border: 0;
 background: none;
 width: 100%;
-padding: 10px;
+padding: 12px;
 `
 
 const Placeholder = styled(motion.div)`
+font-family: 'Source Sans 3', sans-serif;
 position: absolute;
 color: rgba(0, 0, 0, 0.4);
 font-weight: 600;

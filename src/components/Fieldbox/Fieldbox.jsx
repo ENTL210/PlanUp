@@ -30,7 +30,7 @@ function Fieldbox({ value, setValue, type, placeholder }) {
             <Input type={type} value={value} onChange={e => setValue(e.target.value)} ref={inputRef} />
             <Placeholder
                 animate={{
-                    y: isFocus ? -18 : 0,
+                    y: isFocus ? -19 : 0,
                     background: isFocus ? "#eeeeee" : "",
                     color: isFocus ? "#000000" : ""
                 }}
